@@ -1,0 +1,65 @@
+***************************************************Activity 1: Install terraform on Ubuntu ec2****************************************
+Terraform doc to see AWS resources information
+https://registry.terraform.io/providers/hashicorp/aws/2.43.0/docs
+
+Step 1: Create one Ubuntu EC2 instance and connect to it using instance connect
+
+Step 2 : Install Terraform on Ubuntu ec2 instance
+
+Link https://developer.hashicorp.com/terraform/install?product_intent=terraform#linux
+
+Type following commands
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+sudo apt update && sudo apt install terraform
+
+Step 3: Check if installation is successful by typing following command
+terraform version
+
+Step 4: Install AWS CLI on Ubuntu ec2 instance
+
+sudo apt update
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+
+Step 5: Check if AWS CLI installation is successful 
+aws --version
+
+Step 6: Login into AWS
+aws configure
+Enter access key and secrete access key and set default version as us-east-1
+--------------
+Step 7: check if login is successful
+aws sts get-caller-identity
+
+*****************************************************Activity 2: Install terraform on laptop*********************************
+
+Link https://developer.hashicorp.com/terraform/install?product_intent=terraform#windows
+
+1.	Click on windows binary version 386 download and It will download zip
+2.	Unzip the file and copy the path
+3.	Go to control panel
+4.	Open system
+5.	Open Advance system settings
+6.	Click on environment variable button
+7.	Select path  edit - new - paste the path copied earlier
+8.	Create folder demo anywhere in laptop
+9.	Right click and open github bash
+10.	Check if installation is successful using following command
+	terraform version 
+11.	Download and Install aws cli
+	https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+12.	Check aws installation 
+	aws –-version
+
+13.	Login in AWS using 
+	aws configure
+	Enter access key and secrete access key
+
+14.	Step 6: check if login is successful
+	aws sts get-caller-identity
