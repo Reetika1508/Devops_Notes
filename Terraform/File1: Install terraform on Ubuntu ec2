@@ -18,7 +18,7 @@ sudo apt update && sudo apt install terraform
 Step 3: Check if installation is successful by typing following command
 terraform version
 
-Step 4: Install AWS CLI on Ubuntu ec2 instance
+Step 4: Install AWS CLI on Ubuntu ec2 instance : To connect to AWS i need AWS cLI.
 
 sudo apt update
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
