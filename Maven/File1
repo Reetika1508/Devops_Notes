@@ -1,0 +1,4 @@
+When we run mvn install
+- It creates the 'Target'folder and stores the maven dependencies in ~/.m2/repository/ Folder.
+- The dependecies are downloaded from maven global online repository.
+- when we run any maven command, it validates previous stages as well. (like mvn install will run mvn validate, mvn test implicitly)
