@@ -1,3 +1,5 @@
 Terrafrom validate : to check if the configuration is valid or not
 Terraform fmt: For formatting
-terraform.tfstate file: Contains information about the resource created. This file created after we do Terraform apply.
+terraform.tfstate file: Contains information about the resource created. This file created after we do Terraform apply. when we modify any resource 
+it fetches the info from this file and compare and then make changes.
+
