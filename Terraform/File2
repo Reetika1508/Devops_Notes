@@ -1,0 +1,3 @@
+Terrafrom validate : to check if the configuration is valid or not
+Terraform fmt: For formatting
+terraform.tfstate file: Contains information about the resource created. This file created after we do Terraform apply.
