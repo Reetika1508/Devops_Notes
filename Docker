@@ -1,0 +1,3 @@
+Composs file use to launch multiple contianers but on a single node.
+Docker swarm is use to manage clusters of docker hosts/nodes/containers.
+Docjer swarm nodes - Manager and worker nodes
