@@ -1,3 +1,5 @@
 Composs file use to launch multiple contianers but on a single node.
 Docker swarm is use to manage clusters of docker hosts/nodes/containers.
-Docjer swarm nodes - Manager and worker nodes
+Docker swarm nodes - Manager and worker nodes
+Commands can be run from any manager nodes but it will execute only by leader node.
+docker stack in docker swarm is equivalent to docker compose 
