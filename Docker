@@ -3,3 +3,5 @@ Docker swarm is use to manage clusters of docker hosts/nodes/containers.
 Docker swarm nodes - Manager and worker nodes
 Commands can be run from any manager nodes but it will execute only by leader node.
 docker stack in docker swarm is equivalent to docker compose 
+Type of networks: Bridge,host,null
+Default bridge network allows cont3ainer to talk using IP but not using continers namehence we use custom bridge nw.
