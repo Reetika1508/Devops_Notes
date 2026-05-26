@@ -5,3 +5,5 @@ Commands can be run from any manager nodes but it will execute only by leader no
 docker stack in docker swarm is equivalent to docker compose 
 Type of networks: Bridge,host,null
 Default bridge network allows cont3ainer to talk using IP but not using continers namehence we use custom bridge nw.
+None network means contianer in it does not have any IP, it will not communicate to any other container. Just to itslef. It is isolated.
+host nw is when container uses the same port as host. Same IP.
