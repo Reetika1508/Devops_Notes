@@ -8,3 +8,4 @@ Default bridge network allows cont3ainer to talk using IP but not using continer
 None network means contianer in it does not have any IP, it will not communicate to any other container. Just to itslef. It is isolated.
 host nw is when container uses the same port as host. Same IP.
 The containers which are expossed to external world will be in the ingress/overlay network and all containers will be in the default custom network created when we deploy the containers.
+Docker content trust/CoSIGN: Image signing: Developer creates image can sign the image and push to docker hub for authenticity.
