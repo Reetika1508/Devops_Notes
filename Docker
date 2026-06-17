@@ -1,3 +1,11 @@
+Docker Udemy:
+Containerization provides isolation of multiple services on single OS.
+Container is just a process.
+
+
+
+
+
 Composs file use to launch multiple contianers but on a single node.
 Docker swarm is use to manage clusters of docker hosts/nodes/containers.
 Docker swarm nodes - Manager and worker nodes
